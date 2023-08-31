@@ -1,4 +1,9 @@
+# Membros do Grupo
 
+-  Leonardo Vilas Boas Mendes
+-  Marcos Vinicius de Lima Silva
+-  Luiz Pedro Marques Filho
+-  Vinicius Machioni
 
 # Disciplina: Trabalho Acadêmico Integrado II
 
