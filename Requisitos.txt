@@ -1,0 +1,16 @@
+1 Login
+2 Cadastro
+3 Cadastrar Animais
+4 Excluir o animal cadastrado
+5 Botão para permitir entrar em contato pelo whatsapp 
+6 Botão para permitir entrar em contato pelo email 
+
+Não Funcionais
+
+1 - Não permitir cadastrar com informação vazia
+2 - Não permitir o usuário cadastrar animal com informação vazia
+3 - Não permitir o usuário entrar emoutra página sem estar logado
+4 - Excluir apenas o animal que o usuário cadastrou
+5 - Cadastrar animais apenas se estiver logado
+6 - Deixar o sistema responsivo
+7 - Permitir o usuário deslogar
