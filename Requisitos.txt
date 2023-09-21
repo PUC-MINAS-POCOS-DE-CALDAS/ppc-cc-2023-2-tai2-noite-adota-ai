@@ -1,9 +1,11 @@
-1 Login
-2 Cadastro
-3 Cadastrar Animais
-4 Excluir o animal cadastrado
-5 Botão para permitir entrar em contato pelo whatsapp 
-6 Botão para permitir entrar em contato pelo email 
+Funcionais
+
+1 - Login
+2 - Cadastro
+3 - Cadastrar Animais
+4 - Excluir o animal cadastrado
+5 - Botão para permitir entrar em contato pelo whatsapp 
+6 - Botão para permitir entrar em contato pelo email 
 
 Não Funcionais
 
