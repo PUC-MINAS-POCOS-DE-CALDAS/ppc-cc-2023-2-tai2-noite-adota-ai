@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { Login } from './pages/Login'
 import { Register } from './pages/Register'
+import { Home } from './pages/Home'
 
 
 export function Router() {
@@ -8,6 +9,7 @@ export function Router() {
     <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/cadastro" element={<Register />} />
+        <Route path="/home" element={<Home />} />
     </Routes>
   )
 }
