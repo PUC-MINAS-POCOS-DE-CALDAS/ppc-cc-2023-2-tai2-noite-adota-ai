@@ -54,7 +54,7 @@ export const LoginComponent = styled.section`
 
         input {
             margin-top: 1.5rem;
-            border: 1px solid ${(props) => props.theme['gray-300']};
+            border: 1px solid ${(props) => props.theme['gray-200']};
             padding: 1rem;
             background: ${(props) => props.theme.white};
             border-radius: 8px;
@@ -68,6 +68,7 @@ export const LoginComponent = styled.section`
         button {
             border: 0;
             border-radius: 8px;
+            cursor: pointer;
 
             margin-top: 2rem;
             padding: 1rem;
@@ -81,13 +82,14 @@ export const LoginComponent = styled.section`
 
     .register-button {
         margin-top: 1rem;
+        color: ${(props) => props.theme['black-gray']};
+        font-weight: bold;
 
         a {
             display: flex;
             align-items: center;
             
             p {
-                color: "#15151D";
                 margin-left: .5rem;
                 font-weight: 500;
                 font-size: 1.25rem;

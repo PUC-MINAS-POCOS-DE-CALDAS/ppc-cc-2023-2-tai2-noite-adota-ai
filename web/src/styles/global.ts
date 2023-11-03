@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     box-shadow: 0 0 0 2px ${props => props.theme['gray-300']};
   }
   body {
-    background-color: ${props => props.theme['gray-200']};
+    background-color: ${props => props.theme['gray-100']};
     color: ${props => props.theme['dark-gray']};
     -webkit-font-smoothing: antialiased;
   }
