@@ -1,9 +1,17 @@
 import { HeaderContainer, PowerStyled } from "./style";
 
 import logo from '../../../../assets/logo.svg'
+import { useNavigate } from "react-router-dom";
 
 
 export function Header(){
+    const navigate = useNavigate();
+
+    function handleSubmitRegister(route: string){
+        console.log("click")
+        navigate(`${route}`)
+    }
+
     return(
         <HeaderContainer>
             <div className="welcome-header">
@@ -11,14 +19,18 @@ export function Header(){
                 <p>Bem vindo(a), nome.</p>
             </div>
             <div className="buttons-container">
-                <button className="button-create">
-                    Cadastrar animal
-                </button>
-                <button className="button-logoff">
-                    <PowerStyled 
-                        size={32}
-                    />
-                </button>
+                <form className="form-pet-register" onSubmit={() => handleSubmitRegister('/cadastro-animal')}>
+                    <button className="button-create">
+                        Cadastrar animal
+                    </button>
+                </form>
+                <form className="form-logoff" onSubmit={() => handleSubmitRegister('/')}>
+                    <button className="button-logoff">
+                        <PowerStyled
+                            size={32}
+                        />
+                    </button>
+                </form>
             </div>
         </HeaderContainer>    
     )

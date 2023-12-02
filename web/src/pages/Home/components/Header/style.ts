@@ -30,36 +30,43 @@ export const HeaderContainer = styled.header`
         display: flex;
         align-items: center;
 
-        button {
+        form {
             margin-left: 1rem;
         }
 
-        .button-create {
-            border: 0;
-            border-radius: 8px;
+
+        .form-pet-register {
             cursor: pointer;
+            .button-create {
+                border: 0;
+                border-radius: 8px;
+                
 
-            padding: 1rem;
+                padding: 1rem;
 
-            background-color: ${(props) => props.theme.orange};
-            color: ${(props) => props.theme.white};
-            font-weight: bold;
+                background-color: ${(props) => props.theme.orange};
+                color: ${(props) => props.theme.white};
+                font-weight: bold;
+            }
         }
 
-        .button-logoff {
-            border: 1px solid ${(props) => props.theme['gray-200']};
-            border-radius: 6px;
+        .form-logoff {
             cursor: pointer;
+            .button-logoff {
+                border: 1px solid ${(props) => props.theme['gray-200']};
+                border-radius: 6px;
+                cursor: pointer;
 
-            padding: .5rem;
+                padding: .5rem;
 
-            background-color: transparent;
-            color: ${(props) => props.theme['black-gray']};
-            font-weight: bold;
+                background-color: transparent;
+                color: ${(props) => props.theme['black-gray']};
+                font-weight: bold;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 

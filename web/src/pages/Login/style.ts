@@ -65,18 +65,43 @@ export const LoginComponent = styled.section`
             color: ${(props) => props.theme['gray-400']};
         }
 
-        button {
-            border: 0;
-            border-radius: 8px;
-            cursor: pointer;
+        .links-container {
+            width: 100%;
 
-            margin-top: 2rem;
-            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            gap: .5rem;
 
-            background-color: ${(props) => props.theme.orange};
-            color: ${(props) => props.theme.white};
-            font-weight: bold;
-            font-size: 1.60rem;
+            .login-button, .research-button {
+                width: 50%;
+                border: 0;
+                border-radius: 8px;
+                cursor: pointer;
+
+                margin-top: 2rem;
+                padding: 1rem;
+
+                background-color: ${(props) => props.theme.orange};
+                color: ${(props) => props.theme.white};
+                font-weight: bold;
+                font-size: 1.60rem;
+            }
+
+            .research-button {
+                font-size: 1.25rem;
+                text-align: center;
+            }
+        }
+
+        @media(max-width: 768px){
+            .links-container {
+                flex-direction: column;
+                gap: 0;
+
+                .login-button, .research-button {
+                    width: 100%;
+                }
+            }
         }
     }
 

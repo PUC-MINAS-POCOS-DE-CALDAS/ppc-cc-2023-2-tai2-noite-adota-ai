@@ -4,12 +4,15 @@ import { AdoptionContainer, Container, InfosContainer, PetDetailsContainer } fro
 import dogImg from '../../assets/dog_big.png'
 
 export function PetDetails(){
+
     return (
         <Container>
             <PetDetailsContainer>
-                <ArrowLeftStyled
-                    size={48}
-                />
+                <a href="/home">
+                    <ArrowLeftStyled
+                        size={48}
+                    />
+                </a>
                 <AdoptionContainer>
                     <img src={dogImg} className="dog" />
                     <InfosContainer>

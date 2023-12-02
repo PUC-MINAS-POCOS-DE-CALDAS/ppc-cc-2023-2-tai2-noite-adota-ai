@@ -1,7 +1,15 @@
+import { useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 import { ArrowLeftStyled, FormContainer, InfoContainer, RegisterContainer, TextContainer } from './style'
 
 export function Register(){
+
+    const navigate = useNavigate();
+
+    function handleSubmitRegister(){
+        navigate('/')
+    }
+
     return (
         <RegisterContainer>
             <InfoContainer>
@@ -17,7 +25,7 @@ export function Register(){
                         <p>Voltar para o logon</p>
                     </a>
                 </TextContainer>
-                <FormContainer>
+                <FormContainer onSubmit={handleSubmitRegister}>
                     <input type="text" placeholder="E-mail" />
                     <input type="text" placeholder="Telefone" />
                     <input type="text" placeholder="Senha" />
